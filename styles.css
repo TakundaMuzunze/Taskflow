@@ -86,3 +86,50 @@ a{
 .hero-btn:hover{
     box-shadow: 3px 3px 10px 3px #c0c0c0;
 }
+
+.container{
+    padding: 20px;
+}
+
+.page-title{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.signup-area{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 500px
+}
+
+.signup-area p{
+    text-align: center;
+}
+
+label{
+    margin: 12px 0;
+}
+
+.text-field{
+    font-size: 16px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.hyperlink{
+    color: #747676;
+    text-decoration: underline;
+}
+
+.signup-btn{
+    padding: 18px 36px;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 35%;
+    margin: 0 auto;
+}
