@@ -1,0 +1,83 @@
+/*light mode
+--text: #000000;
+--background: #ffffff;
+--primary: #3d3e3d;
+--secondary: #daddda;
+--accent: #747676;
+*/
+
+/* Dark Mode
+--text: #ffffff;
+--background: #000000;
+--primary: #3d3e3d;
+--secondary: #0f100f;
+--accent: #c1c2c2;
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100;
+    font-family: 'Poppins';
+}
+
+header{
+    width: 100%;
+    border-bottom: 1px solid #b3b3b3;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button{
+    font-size: 18px;
+    font-weight: 400;
+    border: 0;
+    border-radius: 15px;
+    padding: 14px 28px;
+    color: #ffffff;
+    background-color: #3d3e3d;
+    cursor: pointer;
+}
+
+p{
+    font-size: 20px;
+}
+
+h1{
+    font-size: 32px;
+}
+
+.logo{
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.login-btn{
+    margin-right: 20px;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.hero-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-btn{
+    font-size: 20px;
+    padding: 18px 36px;
+}
+
+.hero-btn:hover{
+    box-shadow: 3px 3px 10px 3px #c0c0c0;
+}
