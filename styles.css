@@ -55,6 +55,26 @@ a{
     text-decoration: none;
 }
 
+.main-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links{
+    list-style-type: none;
+    margin: 0 12px;
+}
+
+.nav-links i:hover{
+    background-color: #5e5e5e;
+}
+
+.nav-links i{
+    padding: 5px;
+    color: #ffffff;
+}
+
 .logo{
     justify-content: flex-start;
     margin-left: 20px;
@@ -64,6 +84,7 @@ a{
     padding: 16px 32px;
     margin-right: 20px;
 }
+
 
 .hero{
     display: flex;
@@ -118,7 +139,12 @@ label{
     border-radius: 5px;
     width: 100%;
     padding: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+}
+
+.error-message{
+    color: #ff0000;
+    display: none;
 }
 
 .hyperlink{
@@ -134,9 +160,69 @@ label{
     margin: 0 auto;
 }
 
+.account-page-bar{
+    background-color: #3d3e3d;
+}
+
+#dashboard{
+    display: flex;
+    flex-direction: row;
+}
+
 .sidebar{
     height: 100vh;
     width: 350px;
     padding: 20px;
     background-color: #fafafa;
+}
+
+.sidebar-tab{
+    width: 100%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.sidebar-tab p{
+    font-size: 18px;
+}
+
+.sidebar-tab i {
+    margin-right: 10px;
+}
+
+.sidebar-tab:hover{
+    background-color: #eaeaea;
+}
+
+.task-actions{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 0 10px;
+    border: 1px solid #747676;
+    border-radius: 10px;
+}
+
+.task-actions:hover{
+    border: 1px solid #3d3e3d;
+}
+
+.task-actions i{
+    color: #747676;
+    font-size: 16px;
+    font-weight: lighter;
+    align-self: center;
+}
+
+.add-task{
+    font-size: 16px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+}
+
+::placeholder{
+    color: #747676;
 }
