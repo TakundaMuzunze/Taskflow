@@ -11,30 +11,57 @@
     <header>
         <nav id ="navigation-bar" class="account-page-bar">
             <ul class="main-nav">
-                <button class="login-btn" id="login"><a href="signup.html">Log in</a></button>
+                <li class="nav-links">
+                    <i class="fas fa-home"></i>
+                </li>
+                <li class="nav-links">
+                    <i class="far fa-bell"><a href="taskflow.html"></a></i>
+                </li>
+                <li class="nav-links">
+                    <i class="fas fa-plus"></i>
+                </li>
+                <li class="nav-links">
+                    <i class="far fa-user"></i>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="dashboard">
         <aside class="sidebar">
             <div class="sidebar-tab" id="user">
                 <p><span id="username"></span></p>
                 <p>Free plan</p>
             </div>
             <div class="sidebar-tab" id="current-date">
-                <p>Today's tasks</p>
+                <p><i class="far fa-calendar-check"></i>Today's tasks</p>
             </div>
             <div class="sidebar-tab" id="inbox-tab">
-                <p>Inbox</p>
+                <p><i class="fas fa-inbox"></i>Inbox</p>
             </div>
             <div class="sidebar-tab" id="upcoming-tab">
-                <p>Upcoming tasks</p>
+                <p><i class="far fa-calendar-alt"></i>Upcoming tasks</p>
             </div>
         </aside>
         <div class="container">
-            
-            
+            <div class="dashboard-title">
+                <h2>Hello, <span id="username"></span></h2>
+                <h4>Welcome to your dashboard</h4>
+            </div>
+            <div class="date">
+                <h4></h4>
+                <div class="filter-btn"></div>
+            </div>
+            <input type="radio" id="learn" name="get-started" value="learn">
+            <label for="learn">Learn the basics with the <span class="hyperlink"><a href="#">Getting Started Guide</a></span></label><br>
+            <section class="tasks">
+                <div class="container">
+                    <div class="task-actions">
+                        <i class="fas fa-plus"></i>
+                        <input type="text" class="add-task" placeholder="Add a task">
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
     <script src="scripts.js"></script>
