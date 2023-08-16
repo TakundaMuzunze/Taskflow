@@ -9,17 +9,17 @@ const registration = (event) => {
     event.preventDefault();
 
     if (emailInput.value === "" && passwordInput.value === "") {
-        alert("Please fill out the form with your details")
+        errorMessage.textContent = "Please fill out the form with your details";
         return false;
     }
 
     else if (emailInput.value === "" || !emailInput.value.includes("@")){
-        alert("Please enter a valid email address");
+        errorMessage.textContent = "Please enter a valid email address";
         return false;
     }
 
     else if (passwordInput.value.length < 7 || passwordInput === ""){
-        alert("Password must be at least than 7 characters");
+        errorMessage.textContent = "Password must be at least than 7 characters";
         return false;
     }
 
