@@ -62,8 +62,14 @@ a{
 }
 
 .nav-links{
+    color: #747676;
+    font-size: 20px;
     list-style-type: none;
     margin: 0 12px;
+}
+
+.nav-links:hover{
+    color: #000000;
 }
 
 .nav-links i:hover{
@@ -81,8 +87,18 @@ a{
 }
 
 .login-btn{
-    padding: 16px 32px;
+    color: #000000;
+    border: 2px solid #3d3e3d;
+    background-color: transparent;
+    padding: 14px 32px;
     margin-right: 20px;
+}
+
+.login-btn:hover{
+    border: 0;
+    color: white;
+    background-color: #3d3e3d;
+    transition: 0.3s ease;
 }
 
 
