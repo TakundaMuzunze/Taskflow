@@ -210,17 +210,41 @@ label{
     background-color: #eaeaea;
 }
 
+.date-display,
+.listed-tasks{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.singular-listed-task{
+    display: flex;
+    font-size: 46px;
+    border-radius: 10px;
+    border: 2px solid #747676;
+    margin: 15px 0;
+    padding: 5px 10px;
+    height: 30px;
+}
+
+.task-content{
+    font-size: 16px;
+    align-self: center;
+}
+
 .task-actions{
     display: flex;
     justify-content: center;
     gap: 5px;
     padding: 0 10px;
-    border: 1px solid #747676;
+    border: 2px solid #747676;
     border-radius: 10px;
 }
 
 .task-actions:hover{
-    border: 1px solid #3d3e3d;
+    border: 2px solid #3d3e3d;
 }
 
 .task-actions i{
@@ -228,6 +252,7 @@ label{
     font-size: 16px;
     font-weight: lighter;
     align-self: center;
+    padding: 5px;
 }
 
 .add-task{
@@ -241,4 +266,9 @@ label{
 
 ::placeholder{
     color: #747676;
+}
+
+.task-actions i:hover{
+    color: white;
+    background-color: #3d3e3d;
 }
