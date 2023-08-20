@@ -30,7 +30,6 @@
     <main id="dashboard">
         <aside class="sidebar">
             <div class="sidebar-tab" id="user">
-                <p><span id="username"></span></p>
                 <p>Free plan</p>
             </div>
             <div class="sidebar-tab" id="current-date">
@@ -45,7 +44,7 @@
         </aside>
         <div class="container">
             <div class="dashboard-title">
-                <h2>Hello, <span id="username"></span></h2>
+                <h2>Hello, <span id="username-display"></span></h2>
                 <h4>Welcome to your dashboard</h4>
             </div>
             <div class="date">
@@ -54,23 +53,28 @@
             </div>
             <input type="radio" id="learn" name="get-started" value="learn">
             <label for="learn">Learn the basics with the <span class="hyperlink"><a href="#">Getting Started Guide</a></span></label><br>
-            <!-- <section class="tasks">
+            <section class="tasks">
                 <div class="container">
+                    <div class="date-display">
+                        <h5 id="date"></h5>
+                    </div>
                     <div class="listed-tasks">
-                        <input type="text" class="add-task" placeholder="Add a task">
+                        <!-- Listed tasks from user appear here-->
                     </div>
                 </div>
-            </section> -->
+            </section>
             <section class="tasks">
                 <div class="container">
                     <div class="task-actions">
-                        <i class="fas fa-plus"></i>
-                        <input type="text" class="add-task" placeholder="Add a task">
+                        <i id="plus-icon" class="fas fa-plus"></i>
+                        <input type="text" class="add-task" id="single-task" placeholder="Add a task">
                     </div>
                 </div>
             </section>
         </div>
     </main>
-    <script src="scripts.js"></script>
+    <script src="js/registration.js"></script>
+    <script src="js/main.js"></script>
+    <script src="home.js"></script>
 </body>
 </html>
