@@ -210,6 +210,12 @@ label{
     background-color: #eaeaea;
 }
 
+.dashboard-title{
+    padding: 20px
+}
+
+
+
 .date-display,
 .listed-tasks{
     display: none;
@@ -219,8 +225,13 @@ label{
     display: block;
 }
 
+.date-heading{
+    font-weight: bolder;
+}
+
 .singular-listed-task{
     display: flex;
+    justify-content: space-between;
     font-size: 46px;
     border-radius: 10px;
     border: 2px solid #747676;
@@ -232,6 +243,17 @@ label{
 .task-content{
     font-size: 16px;
     align-self: center;
+}
+
+.delete-icon {
+    font-size: 16px;
+    color: #ff5555;
+    cursor: pointer;
+    align-self: center;
+}
+
+.delete-icon:hover{
+    color: #ff0000;
 }
 
 .task-actions{
