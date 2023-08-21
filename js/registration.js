@@ -1,3 +1,4 @@
+const nameInput = document.getElementById('name-field');
 const emailInput = document.getElementById('email-field');
 const passwordInput = document.getElementById('pwd-field');
 const submitButton  = document.getElementById('signup');
@@ -8,7 +9,7 @@ const userDetails = [];
 const handleRegistration = (event) => {
     event.preventDefault();
 
-    if (emailInput.value === "" && passwordInput.value === "") {
+    if (emailInput.value === "" && passwordInput.value === "" && nameInput.value === "") {
         errorMessage.textContent = "Please fill out the form with your details";
         return false;
     }
@@ -24,7 +25,8 @@ const handleRegistration = (event) => {
     }
 
     const user = {
-        username: emailInput.value,
+        username: nameInput.value,
+        email: emailInput.value,
         password: passwordInput.value,
     };
 
