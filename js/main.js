@@ -1,3 +1,18 @@
+// Display username onto the dashboard
+const usernameDisplay = document.getElementById('username-display');
+
+const displayUser = () => {
+    const userDataString = localStorage.getItem("userDetails");
+    const userData = JSON.parse(userDataString);
+    const currentUser = userData[0];
+    
+    if (currentUser) {
+        usernameDisplay.textContent = currentUser.username;
+    }
+};
+
+document.addEventListener("DOMContentLoaded", displayUser);
+
 // Displaying random tips on user dashboard
 const tipText = document.getElementById('tip-text');
 
