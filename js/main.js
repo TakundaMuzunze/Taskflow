@@ -1,6 +1,6 @@
 const task = document.getElementById('single-task');
 const taskDisplayContainer = document.querySelector('.listed-tasks')
-const dateDisplay = document.getElementById('date');
+const dateDisplay = document.querySelector('.date-display');
 const addIcon = document.getElementById('plus-icon');
 
 const addTask = (event) => {
@@ -14,18 +14,31 @@ const addTask = (event) => {
         taskText.classList.add('task-content');
         taskText.innerText= `${taskInput}`;
 
-        taskElementContainer.appendChild(taskText);
-        taskDisplayContainer.appendChild(taskElementContainer);
+        const deleteIcon = document.createElement('i');
+        deleteIcon.classList.add('fas', 'fa-trash', 'delete-icon');
 
+        taskElementContainer.appendChild(taskText);
+        taskElementContainer.appendChild(deleteIcon);
+        taskDisplayContainer.appendChild(taskElementContainer);
 
         taskDisplayContainer.classList.add('show');
         dateDisplay.classList.add('show');
+        dateDisplay.classList.add('date-heading');
     }
 
+    displayTasks();
     task.value="";
 };
 
-const displayTasks = (event) => {
+const displayTasks = () => {
+    const currentDate = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDate = currentDate.toLocaleDateString('en-US', options);
+
+    dateDisplay.textContent = formattedDate;
+}
+
+const removeTasks = () => {
 
 }
 
