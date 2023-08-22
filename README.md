@@ -2,7 +2,7 @@
 
 Welcome to the Taskflow repository! Taskflow is a task management web application built using HTML, CSS, and JavaScript. This project helps users manage their tasks and stay organized in their daily activities.
 
-![Taskflow Preview](screenshot.png)
+![Taskflow Preview](taskflow.png)
 
 ## 🌟 Overview
 Taskflow is designed to provide users with an intuitive platform to create, manage, and track tasks. It offers features such as user registration, task creation, random tips, and a responsive design for different devices.
