@@ -23,7 +23,8 @@ body{
 
 header{
     width: 100%;
-    border-bottom: 1px solid #b3b3b3;
+    /* border-bottom: 1px solid #b3b3b3; */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav{
@@ -154,7 +155,7 @@ a{
 }
 
 .signup-area p{
-    text-align: center;
+    text-align: left;
 }
 
 label{
@@ -170,9 +171,17 @@ label{
     margin-bottom: 10px;
 }
 
+.text-field-error{
+    border: 1px solid #ff0000;
+}
+
 .error-message{
     font-size: 16px;
     color: #ff0000;
+}
+
+.error-message:empty {
+    margin: 0;
 }
 
 .hyperlink{
