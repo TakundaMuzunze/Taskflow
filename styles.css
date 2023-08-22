@@ -405,4 +405,8 @@ a{
     .signup-btn{
         width: 50%;
     }
+
+    .sidebar{
+        display: none;
+    }
 }
