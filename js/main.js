@@ -26,7 +26,7 @@ const tips = [
 
 const randomTip = () => {
     const randomIndex = Math.floor(Math.random() * tips.length);
-    tipText.textContent = "Tip of the Day: " + tips[randomIndex];
+    tipText.textContent = `Tip of the Day:  ${tips[randomIndex]}`;
 }
 
 randomTip();
